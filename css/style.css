@@ -14,3 +14,33 @@
 .btn-success{
 	background-color: none;
 }
+.margen-top{
+	margin-top: 20px;
+	font-size: 20px;
+}
+.btn-next{
+	padding-left: 50px;
+	padding-right: 50px;
+	background: rgba(109,0,25,1);
+	background: -moz-linear-gradient(left, rgba(109,0,25,1) 0%, rgba(109,0,25,1) 19%, rgba(169,3,41,1) 89%, rgba(169,3,41,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(109,0,25,1)), color-stop(19%, rgba(109,0,25,1)), color-stop(89%, rgba(169,3,41,1)), color-stop(100%, rgba(169,3,41,1)));
+	background: -webkit-linear-gradient(left, rgba(109,0,25,1) 0%, rgba(109,0,25,1) 19%, rgba(169,3,41,1) 89%, rgba(169,3,41,1) 100%);
+	background: -o-linear-gradient(left, rgba(109,0,25,1) 0%, rgba(109,0,25,1) 19%, rgba(169,3,41,1) 89%, rgba(169,3,41,1) 100%);
+	background: -ms-linear-gradient(left, rgba(109,0,25,1) 0%, rgba(109,0,25,1) 19%, rgba(169,3,41,1) 89%, rgba(169,3,41,1) 100%);
+	background: linear-gradient(to right, rgba(109,0,25,1) 0%, rgba(109,0,25,1) 19%, rgba(169,3,41,1) 89%, rgba(169,3,41,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6d0019', endColorstr='#a90329', GradientType=1 );
+	border: 0px;
+	font-weight: bold;
+}
+.btn-next:hover{
+	background: rgba(239,197,202,1);
+	background: -moz-linear-gradient(left, rgba(239,197,202,1) 0%, rgba(210,75,90,1) 0%, rgba(186,39,55,1) 57%, rgba(241,142,153,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(239,197,202,1)), color-stop(0%, rgba(210,75,90,1)), color-stop(57%, rgba(186,39,55,1)), color-stop(100%, rgba(241,142,153,1)));
+	background: -webkit-linear-gradient(left, rgba(239,197,202,1) 0%, rgba(210,75,90,1) 0%, rgba(186,39,55,1) 57%, rgba(241,142,153,1) 100%);
+	background: -o-linear-gradient(left, rgba(239,197,202,1) 0%, rgba(210,75,90,1) 0%, rgba(186,39,55,1) 57%, rgba(241,142,153,1) 100%);
+	background: -ms-linear-gradient(left, rgba(239,197,202,1) 0%, rgba(210,75,90,1) 0%, rgba(186,39,55,1) 57%, rgba(241,142,153,1) 100%);
+	background: linear-gradient(to right, rgba(239,197,202,1) 0%, rgba(210,75,90,1) 0%, rgba(186,39,55,1) 57%, rgba(241,142,153,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efc5ca', endColorstr='#f18e99', GradientType=1 );
+	font-weight: bold;
+
+}
