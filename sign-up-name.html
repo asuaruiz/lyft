@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sign-Up</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="https://unpkg.com/notie/dist/notie.css">
+	<link rel="stylesheet" href="build/css/intlTelInput.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container-fluid text-center">
+		<div class="row">
+			<div class="col-xs-1 text-center">
+				<a href="sign-up.html"><span class="glyphicon glyphicon-chevron-left margen-top"></span></a>
+			</div>
+			<div class="col-xs-10">
+				<div class="row">
+					<div class="col-xs-11 text-center">
+						<h3>SIGN-UP</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12">
+						<p>Join now for free ride credit</p>
+					</div>
+				</div>
+				<hr>
+				<div class="row">
+					<div class="col-xs-12">
+						<form id="form-validate-register">
+							<div class="form-group">
+								<input type="name" class="form-control" id="input-name-signup" placeholder="Name">
+							</div>
+							<div class="form-group">
+								<input type="email" class="form-control" id="input-email-signup" placeholder="Email">
+							</div>
+							<div class="checkbox">
+								<label>
+									<input id="terms-conditions" type="checkbox"> I agree to Lyft's <a href="https://www.lyft.com/terms">Terms of service</a>
+								</label>
+							</div>
+							<button type="submit" class="btn btn-next">Next</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+		<script src='js/main.js'></script>
+		<script src="https://unpkg.com/notie"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script>
+			$(document).ready(function(){  
+				$("#form-validate-register").submit(function (e) {  
+					if($("#input-name-signup").val().length < 1) {  
+						notie.alert(3, 'El nombre debe contener mas de 3 caracteres', 2.5);
+						return false;  
+					} if($("#input-email-signup").val().indexOf('@', 0) == -1 || $("#emailRegistroUsuario").val().indexOf('.', 0) == -1) {  
+						notie.alert(3, 'El email parece incorrecto', 2.5);
+						return false;
+
+					} if($("#terms-conditions").is(":checked")){
+						notie.alert(3, "You must agree to the terms and conditions", 2.5);
+						event.preventDefault();			
+					} else {
+						e.preventDefault();
+						window.location='sign-up-name.html';
+					}  
+
+				});  
+			});  
+		</script>
+
+
+	</body>
+	</html>
